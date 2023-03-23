@@ -178,3 +178,55 @@ document
     mensajeMASTER.innerHTML =
       "¡Número de tarjeta MASTERCARD copiado al portapapeles!";
   });
+
+/*
+
+  function generarCodigoCVV() {
+  // Generar un número de tres dígitos aleatorio para el código CVV
+  var codigoCVV = Math.floor(Math.random() * 900) + 100;
+
+  // Generar una fecha de caducidad aleatoria dentro de los próximos 5 años
+  var fecha = new Date();
+  var anio = fecha.getFullYear() + Math.floor(Math.random() * 5);
+  var mes = Math.floor(Math.random() * 12) + 1;
+  var dia = Math.floor(Math.random() * 28) + 1; // asumiendo que todos los meses tienen 28 días para simplificar
+
+  // Devolver un objeto con el código CVV y la fecha de caducidad
+  return {
+    codigoCVV: codigoCVV,
+    fechaCaducidad: new Date(anio, mes, dia)
+  };
+}
+
+function validarCodigoCVV(numeroTarjeta, codigoCVV, fechaCaducidad) {
+  // Verificar que el número de tarjeta es válido
+  if (!validarNumeroTarjeta(numeroTarjeta)) return false;
+
+  // Verificar que el código CVV tiene tres dígitos
+  if (codigoCVV.length !== 3) return false;
+
+  // Verificar que la fecha de caducidad no haya pasado
+  var fechaActual = new Date();
+  if (fechaCaducidad < fechaActual) return false;
+
+  // Verificar la autenticidad del código CVV
+  var ultimosDigitos = numeroTarjeta.substr(-4);
+  var codigoGenerado = parseInt(ultimosDigitos + codigoCVV[0] + codigoCVV[1] + codigoCVV[2]);
+  var suma = 0;
+  var dobleDigito = false;
+  for (var i = codigoGenerado.length - 1; i >= 0; i--) {
+    var digito = parseInt(codigoGenerado[i], 10);
+
+    if (dobleDigito) {
+      digito *= 2;
+      if (digito > 9) digito -= 9;
+    }
+
+    suma += digito;
+    dobleDigito = !dobleDigito;
+  }
+
+  return suma % 10 == 0;
+}
+
+*/

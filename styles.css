@@ -125,3 +125,15 @@ input[type=text] {
       opacity: 1; /* Termina con opacidad al 100% */
     }
   }
+
+  #numero-passport {
+    text-align: center;
+  }
+
+  #numero-visa {
+    text-align: center;
+  }
+
+  #numero-mastercard {
+    text-align: center;
+  }
