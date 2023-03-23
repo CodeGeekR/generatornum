@@ -1,0 +1,127 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.boton-generar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-generar:hover {
+  background-color: #3e8e41;
+}
+
+.boton-copiar {
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-copiar:hover {
+  background-color: #006d87;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px
+}
+
+  /* Estilo de la línea animada */
+  .linea-animada {
+    height: 2px;
+    border: none;
+    background-color: #ccc;
+    background-image: linear-gradient(90deg, #ccc, #4CAF50, #ccc);
+    background-size: 200%;
+    animation: linea 3s infinite;
+  }
+
+  @keyframes linea {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+  #mensaje {
+    color: #ff6961;
+    /*Colorrojosuave*/font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: parpadeo 3s ease-in-out 1;
+}  
+  @keyframes parpadeo {
+    0% {
+      opacity: 1; /* Comienza con opacidad al 100% */
+    }
+    50% {
+      opacity: 0; /* Opacidad al 0% en la mitad de la animación */
+    }
+    100% {
+      opacity: 1; /* Termina con opacidad al 100% */
+    }
+  }
+
+  #mensajeVISA {
+    color: #ff6961;
+    /*Colorrojosuave*/font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: parpadeo 3s ease-in-out 1;
+}  
+  @keyframes parpadeo {
+    0% {
+      opacity: 1; /* Comienza con opacidad al 100% */
+    }
+    50% {
+      opacity: 0; /* Opacidad al 0% en la mitad de la animación */
+    }
+    100% {
+      opacity: 1; /* Termina con opacidad al 100% */
+    }
+  }
+
+  #mensajeMASTER {
+    color: #ff6961;
+    /*Colorrojosuave*/font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: parpadeo 3s ease-in-out 1;
+}  
+  @keyframes parpadeo {
+    0% {
+      opacity: 1; /* Comienza con opacidad al 100% */
+    }
+    50% {
+      opacity: 0; /* Opacidad al 0% en la mitad de la animación */
+    }
+    100% {
+      opacity: 1; /* Termina con opacidad al 100% */
+    }
+  }
