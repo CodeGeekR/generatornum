@@ -3,7 +3,7 @@
 Este proyecto es una herramienta que permite generar números aleatorios para Passports y Tarjetas de Crédito de manera rápida y sencilla. Este generador es útil para propósitos educativos o de pruebas.
 
 Este es un script educativo, los números generados no son reales, ni estan disponibles para uso.
-El Script esta diseñado para comprobar el algortmo de Luhn.
+El Script esta diseñado para comprobar el algoritmo de Luhn.
 
 ## Tecnologías utilizadas
 
@@ -27,8 +27,6 @@ Este proyecto está abierto a la contribución de cualquier persona interesada e
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulte el archivo LICENSE para obtener más detalles.
-
-## Enlaces
 
 ## Enlaces
 
